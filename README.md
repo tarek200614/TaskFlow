@@ -92,10 +92,10 @@ Backlog → Todo → In Progress → Review → Done
 A native drag-and-drop workflow board powered by the HTML5 Drag & Drop API.
 
 Tasks move through five workflow states:
-
+```text
 Backlog → Todo → In Progress → Review → Done
 ⌘ COMMAND PALETTE
-
+```
 A global navigation and search interface for quickly moving through the application.
 
 Platform	Shortcut
