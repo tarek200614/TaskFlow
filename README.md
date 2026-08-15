@@ -252,7 +252,7 @@ Planned views include:
 
 <img width="1886" height="901" alt="image" src="https://github.com/user-attachments/assets/7b0b5012-04af-4141-8de4-36b8b353c2a3" />
 
-# Kanban Board
+# Action & Goal-Oriented
 
 <img width="1886" height="901" alt="kanban board" src="https://github.com/user-attachments/assets/4088c370-d2ae-455c-a388-14c5d724d068" />
 
