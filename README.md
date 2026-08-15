@@ -97,11 +97,11 @@ Backlog → Todo → In Progress → Review → Done
 ⌘ COMMAND PALETTE
 ```
 A global navigation and search interface for quickly moving through the application.
-
+```text
 Platform	Shortcut
 Windows / Linux	Ctrl + K
 macOS	⌘ + K
-
+```
 The command palette provides access to tasks, projects, and application views.
 
 ---
