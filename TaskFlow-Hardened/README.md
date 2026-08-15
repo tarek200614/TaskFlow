@@ -100,3 +100,69 @@ TaskFlow/
 ├── script.js             # Core TaskFlow logic, state management, UI handlers, and LocalStorage engine
 ├── LICENSE               # Project license (MIT)
 └── README.md             # Project documentation
+📸 Screenshots
+
+Screenshots will be added as the project documentation is updated.
+🎯 Learning Objectives
+
+Developing TaskFlow demonstrated core concepts in frontend software engineering, including:
+
+    Frontend Web Architecture: Structuring scalable single-page interfaces with clean HTML5 and custom CSS3 design systems.
+
+    Modern JavaScript (ES6+): Application state management, event delegation, array transformation pipelines, and modular code architecture.
+
+    DOM & UI Rendering: Dynamically generating user interfaces, handling view routing, and keeping the DOM in sync with local application state.
+
+    Native Browser APIs: Implementing client-side storage with LocalStorage, reading local files via FileReader, and handling native Drag & Drop events.
+
+    Data Validation & Resiliency: Building data normalization routines, schema versioning, and fallback mechanisms for corrupted or missing local data.
+
+    Zero-Dependency Development: Implementing complex UI components (Kanban board, command palette, calendar, charts) using pure web standards without external libraries.
+
+🧪 Testing & Validation
+
+To maintain calculations and data recovery algorithms without external framework overhead, TaskFlow includes a built-in assertion test suite:
+
+    js/statistics.js exposes TaskFlowStats.runStatisticsTests(), covering task totals, completion percentages, overdue calculations, project progress metrics, and edge cases (such as completed tasks with past due dates).
+
+    script.js exposes window.runStatisticsTests(), which triggers both statistical and data-normalization assertions, outputting diagnostics to the console and user interface.
+
+Run the diagnostic suite directly from the browser developer console at any time:
+JavaScript
+
+runStatisticsTests();
+
+🔮 Future Improvements
+
+Planned features and technical enhancements for TaskFlow include:
+
+    Cloud Synchronization: Optional cloud storage synchronization across devices via REST API integration.
+
+    Progressive Web App (PWA): Service worker integration for full offline functionality and desktop installation.
+
+    Advanced Time Tracking: Time estimation logging, active timers, and historical productivity tracking.
+
+    Customizable Workspaces: User-defined Kanban columns, custom tag colors, and flexible workspace themes.
+
+    Automated Testing Suite: Unit and end-to-end testing integration using Playwright or Vitest.
+
+👨‍💻 Author
+
+MEGHARI Abderrahmane Tarek
+
+    GitHub: tarek200614
+
+    LinkedIn: Abderrahmane Tarek MEGHARI
+
+    Email: megharitarek06@gmail.com
+
+📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+⭐ Acknowledgments
+
+    MDN Web Docs: For technical documentation on modern JavaScript ES6+, LocalStorage, HTML5 Drag & Drop, and SVG APIs.
+
+    Native Web Platform: Built leveraging native CSS Grid, CSS Custom Properties, and vanilla web standards.
+
+    Open-Source Community: Inspired by modern productivity tools and minimalist software design principles.
