@@ -199,11 +199,11 @@ TaskFlow follows a deliberately lightweight client-side architecture.
 
 CORE FILES
 File	Responsibility
-index.html	Application shell and interface structure
-style.css	Complete visual system and responsive styling
-script.js	Application state, rendering, controllers, storage and validation
-js/statistics.js	Centralized statistics calculations and diagnostic tests
-assets/favicon.svg	Application favicon
+index.html	## Application shell and interface structure
+style.css	## Complete visual system and responsive styling
+script.js	## Application state, rendering, controllers, storage and validation
+js/statistics.js	## Centralized statistics calculations and diagnostic tests
+assets/favicon.svg	## Application favicon
 ARCHITECTURE PRINCIPLES
 
 The project intentionally maintains:
