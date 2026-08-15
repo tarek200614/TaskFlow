@@ -90,3 +90,16 @@ External Libraries: 0
 External Frameworks: 0
 Backend: None
 Database: None
+TaskFlow/
+│
+├── assets/
+│   └── favicon.svg
+│
+├── js/
+│   └── statistics.js       # Statistics calculation engine
+│
+├── index.html              # Main application interface
+├── style.css               # Complete responsive design system
+├── script.js               # Application logic, state, events & storage
+├── LICENSE
+└── README.md
