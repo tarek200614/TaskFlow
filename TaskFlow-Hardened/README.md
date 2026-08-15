@@ -1,287 +1,92 @@
 # 📋 TaskFlow — Task Management Web Application
 
-<div align="center">
+A modern task and project management web application developed with **HTML5, CSS3, and Vanilla JavaScript**.
 
-<h3>A Modern Task & Project Management Dashboard Built with Vanilla JavaScript</h3>
+TaskFlow provides an interactive dashboard for creating, organizing, tracking, and analyzing tasks through multiple views including Dashboard, My Tasks, Kanban, and Calendar.
 
-<p>
-Clean • Responsive • Interactive • Dynamic • Zero Dependencies
-</p>
-
-<p>
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![LocalStorage](https://img.shields.io/badge/Storage-LocalStorage-7C3AED?style=for-the-badge)
-![Responsive](https://img.shields.io/badge/Responsive-Yes-22C55E?style=for-the-badge)
-
-</p>
-
-</div>
+The project was designed to demonstrate practical frontend development skills, modern UI/UX design, client-side state management, data persistence, validation, responsive design, accessibility, and dynamic data visualization without external frameworks or libraries.
 
 ---
 
-## 📖 About The Project
+## 📌 Overview
 
-**TaskFlow** is a modern task and project management web application developed using **HTML5, CSS3 and Vanilla JavaScript**.
+TaskFlow is a fully client-side task management application designed around a dynamic workspace where users can manage tasks, projects, deadlines, priorities, and productivity statistics.
 
-The application provides an interactive dashboard for managing tasks, monitoring productivity, organizing projects and visualizing progress through multiple views.
+The application uses a centralized application state and browser **LocalStorage** to persist workspace data between sessions.
 
-The project was designed to demonstrate practical frontend development skills including:
+Unlike a static dashboard, TaskFlow dynamically updates its interface and statistics whenever the underlying data changes.
 
-- Modern UI/UX design
-- JavaScript application architecture
-- DOM manipulation
-- State management
-- LocalStorage persistence
-- Data validation and recovery
-- Dynamic statistics
-- Responsive web design
-- Accessibility
-- Interactive interfaces
-
-The project uses **zero external libraries or frameworks**, relying entirely on native web technologies.
+The project focuses on building a professional frontend application using native web technologies while maintaining a clean architecture, responsive interface, accessibility, and reliable data handling.
 
 ---
 
 ## ✨ Features
 
-### 📊 Dashboard
-
-- Dynamic task statistics
-- Total tasks
-- Completed tasks
-- Tasks in progress
-- Overdue tasks
-- Completion rate
-- Productivity overview
-- Task status distribution
-- Priority breakdown
-- Project progress
-- Upcoming deadlines
-- Recent activity
-
-### ✅ Task Management
-
-- Create tasks
-- Edit tasks
-- Delete tasks
-- Task descriptions
-- Task status
-- Task priority
-- Project assignment
-- Due dates
-- Task persistence
-- Task validation
-
-### 📋 Kanban Board
-
-Interactive Kanban workflow with:
-
-- Backlog
-- Todo
-- In Progress
-- Review
-- Done
-
-Tasks can be moved between columns using the native **HTML5 Drag & Drop API**.
-
-### 📅 Calendar
-
-- Monthly calendar interface
-- Dynamic dates
-- Task due dates
-- Active date selection
-- Daily task timeline
-- Task creation based on selected dates
-
-### 📈 Statistics
-
-Task statistics are calculated dynamically from the application data.
-
-The application provides:
-
-- Completion rate
-- Status distribution
-- Priority distribution
-- Overdue task detection
-- Project progress
-- Upcoming deadlines
-- Productivity information
-
-### 🔎 Search & Filtering
-
-- Global task search
-- Status filtering
-- Priority filtering
-- Project filtering
-- Multi-column sorting
-- Task selection
-
-### ⌨️ Command Palette
-
-Quick navigation using:
----
-
-# 📊 Application Overview
-
-TaskFlow is organized around several interconnected views that allow users to manage their work efficiently.
-
-## 🏠 Dashboard
-
-The dashboard provides a centralized overview of the workspace.
-
-It displays:
-
-- Total number of tasks
-- Completed tasks
-- Tasks currently in progress
-- Overdue tasks
-- Completion rate
-- Productivity overview
-- Task status distribution
-- Priority distribution
-- Project progress
-- Upcoming deadlines
-- Recent activity
-
-All statistics are calculated dynamically from the current application state.
+- 📊 Dynamic Productivity Dashboard
+- 📝 Create, Edit & Delete Tasks
+- 📋 Interactive Kanban Board
+- 📅 Dynamic Calendar
+- 📈 Real-Time Task Statistics
+- 🔍 Global Task Search
+- 🎯 Status & Priority Filtering
+- ↕️ Multi-Column Task Sorting
+- 📂 Project Assignment & Management
+- 🏷️ Task Priority Management
+- 📆 Due Date Management
+- 📝 Task Descriptions
+- 🔄 Dynamic Task Status Updates
+- 🖱️ Native HTML5 Drag & Drop
+- 💾 LocalStorage Data Persistence
+- 📤 Workspace Data Export
+- 📥 Workspace Data Import
+- 🛡️ Data Validation & Recovery
+- 🔧 LocalStorage Schema Versioning
+- ⌨️ Command Palette
+- 📱 Responsive Design
+- ♿ Keyboard Accessibility
+- 🎨 Professional Dark SaaS Interface
+- ⚡ Zero External Dependencies
 
 ---
 
-## 📋 My Tasks
+## 🛠️ Technologies Used
 
-The **My Tasks** section provides a complete task management interface.
+### Frontend
 
-### Available operations
+- HTML5
+- CSS3
+- JavaScript (ES6+)
 
-- Create a task
-- Edit a task
-- Delete a task
-- Search tasks
-- Filter tasks
-- Sort tasks
-- Select multiple tasks
-- Change task status
-- Change task priority
-- Assign projects
-- Set due dates
-- Add task descriptions
+### Browser APIs
 
-### Sorting
+- DOM API
+- LocalStorage API
+- HTML5 Drag & Drop API
+- File API
+- SVG
 
-Tasks can be sorted by:
+### Architecture
 
-- Title
-- Status
-- Priority
-- Due Date
+- Client-Side Application Architecture
+- Centralized Application State
+- Dynamic DOM Rendering
+- Event-Driven Programming
+- Data Validation & Normalization
+- Schema Versioning
+- Error Handling
 
-### Filtering
+### Development Tools
 
-Available filters include:
+- Visual Studio Code
+- Git
+- GitHub
+- Modern Web Browser
+- Python HTTP Server
 
-- Status
-- Priority
-- Project
-
----
-
-# 🗂️ Kanban Board
-
-TaskFlow includes an interactive Kanban board for visual workflow management.
-
-Tasks are organized into five workflow stages:
+### Dependencies
 
 ```text
-Backlog
-   ↓
-Todo
-   ↓
-In Progress
-   ↓
-Review
-   ↓
-Done
-
-```text
----
-
-# 🧩 Application Architecture
-
-TaskFlow follows a lightweight client-side architecture designed around a centralized application state and reusable rendering logic.
-
-```text
-                    ┌─────────────────────┐
-                    │      User Input     │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   Event Handlers    │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   Application State │
-                    └──────────┬──────────┘
-                               │
-                 ┌─────────────┴─────────────┐
-                 ▼                           ▼
-        ┌─────────────────┐         ┌─────────────────┐
-        │ Data Validation │         │   Statistics    │
-        │ & Normalization │         │     Engine      │
-        └────────┬────────┘         └────────┬────────┘
-                 │                           │
-                 └─────────────┬─────────────┘
-                               ▼
-                    ┌─────────────────────┐
-                    │    LocalStorage     │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │    Render Engine    │
-                    └──────────┬──────────┘
-                               │
-              ┌────────────────┼────────────────┐
-              ▼                ▼                ▼
-         Dashboard          Kanban           Calendar
-              │
-              ▼
-          My Tasks
----
-
-# 🏆 Project Highlights
-
-TaskFlow combines several frontend development concepts into a single complete application rather than a collection of isolated components.
-
-### 💻 Frontend Engineering
-
-Built entirely with native web technologies:
-
-```text
-HTML5
-CSS3
-JavaScript ES6+
----
-
-# 🌟 What Makes TaskFlow Different?
-
-TaskFlow was built to demonstrate that a complete and polished web application can be created using only native web technologies.
-
-Instead of relying on a large framework or a collection of external libraries, the project implements its core functionality from scratch.
-
-```text
-HTML5
-   +
-CSS3
-   +
-Modern JavaScript
-   +
-Browser APIs
-   +
-LocalStorage
-   ↓
-Complete Interactive Application
+External Libraries: 0
+External Frameworks: 0
+Backend: None
+Database: None
