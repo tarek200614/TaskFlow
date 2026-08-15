@@ -1,6 +1,6 @@
 # 📝 TaskFlow
 
-TaskFlow is a modern, responsive, client-side task and workspace management web application built entirely with native web technologies. Designed for seamless productivity, TaskFlow offers an intuitive interface featuring a real-time analytics dashboard, interactive Kanban board with native drag-and-drop, dynamic calendar daily timeline, global multi-criteria search, and a keyboard-driven command palette.
+TaskFlow is a modern, responsive, client-side task and workspace management web application built entirely with native web technologies. Designed for fast and uninterrupted productivity, TaskFlow offers an intuitive interface featuring a real-time analytics dashboard, interactive Kanban board with native drag-and-drop, dynamic calendar daily timeline, global multi-criteria search, and a keyboard-driven command palette.
 
 The application operates entirely within the browser—utilizing browser APIs and `LocalStorage` for full data persistence without requiring any backend servers, databases, external frameworks, or npm dependencies.
 
@@ -100,11 +100,3 @@ TaskFlow/
 ├── script.js             # Core TaskFlow logic, state management, UI handlers, and LocalStorage engine
 ├── LICENSE               # Project license (MIT)
 └── README.md             # Project documentation
----
-```text
-## 🚀 Installation
-
-### 1. Clone the repository
-Clone the TaskFlow repository to your local machine:
-```bash
-git clone [https://github.com/YOUR_USERNAME/TaskFlow.git](https://github.com/YOUR_USERNAME/TaskFlow.git)
