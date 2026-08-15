@@ -251,4 +251,37 @@ TaskFlow follows a lightweight client-side architecture designed around a centra
               │
               ▼
           My Tasks
+---
 
+# 🏆 Project Highlights
+
+TaskFlow combines several frontend development concepts into a single complete application rather than a collection of isolated components.
+
+### 💻 Frontend Engineering
+
+Built entirely with native web technologies:
+
+```text
+HTML5
+CSS3
+JavaScript ES6+
+---
+
+# 🌟 What Makes TaskFlow Different?
+
+TaskFlow was built to demonstrate that a complete and polished web application can be created using only native web technologies.
+
+Instead of relying on a large framework or a collection of external libraries, the project implements its core functionality from scratch.
+
+```text
+HTML5
+   +
+CSS3
+   +
+Modern JavaScript
+   +
+Browser APIs
+   +
+LocalStorage
+   ↓
+Complete Interactive Application
