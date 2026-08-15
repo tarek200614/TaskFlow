@@ -61,7 +61,7 @@ Project assignment
 
 ---
 
-🗃️ KANBAN WORKFLOW
+## 🗃️ KANBAN WORKFLOW
 
 A native drag-and-drop workflow board powered by the HTML5 Drag & Drop API.
 
@@ -78,7 +78,9 @@ macOS	⌘ + K
 
 The command palette provides access to tasks, projects, and application views.
 
-➕ QUICK CREATE
+---
+
+## ➕ QUICK CREATE
 
 Press C to open the task creation drawer.
 
@@ -105,7 +107,10 @@ The application also supports:
 JSON workspace export
 JSON backup import
 Demo-data reset
-🛡️ DATA VALIDATION & RECOVERY
+
+---
+
+## 🛡️ DATA VALIDATION & RECOVERY
 
 TaskFlow includes a dedicated normalization and recovery layer designed to prevent malformed local data from crashing the application.
 
@@ -121,13 +126,17 @@ Incomplete workspace data
 
 When recovery is required, the application notifies the user.
 
-🔄 STORAGE SCHEMA VERSIONING
+---
+
+## 🔄 STORAGE SCHEMA VERSIONING
 
 Persisted workspace data contains a schemaVersion value.
 
 A lightweight migration mechanism allows the application to evolve its storage format while maintaining compatibility with previously stored workspace data.
 
-📱 RESPONSIVE EXPERIENCE
+---
+
+## 📱 RESPONSIVE EXPERIENCE
 
 The interface is designed for a wide range of screen sizes, with responsive behavior verified from approximately 320px to 1920px.
 
@@ -139,7 +148,10 @@ Adaptive cards
 Responsive tables
 Mobile-friendly task interactions
 No intentional horizontal overflow
-♿ ACCESSIBILITY
+
+---
+
+## ♿ ACCESSIBILITY
 
 Implemented accessibility practices include:
 
@@ -149,7 +161,10 @@ aria-label attributes where appropriate
 Keyboard-accessible profile button
 Escape-to-close modals
 Click-outside modal closing
-🛠️ TECHNOLOGY STACK
+
+---
+
+## 🛠️ TECHNOLOGY STACK
 Technology	Purpose
 HTML5	Semantic application structure
 CSS3	Design system, responsive layouts, Grid, Flexbox, animations
@@ -166,7 +181,9 @@ TaskFlow uses:
 
 Everything is implemented using native browser APIs and modern web standards.
 
-🏗️ ARCHITECTURE
+---
+
+## 🏗️ ARCHITECTURE
 
 TaskFlow follows a deliberately lightweight client-side architecture.
 
@@ -198,7 +215,9 @@ The project intentionally maintains:
 
 This keeps the project easy to inspect, run, and understand while still supporting complex interactive functionality.
 
-📸 SCREENSHOTS
+---
+
+## 📸 SCREENSHOTS
 
 Screenshots will be added as the project documentation is updated.
 
@@ -210,7 +229,10 @@ My Tasks
 Analytics
 Calendar
 Responsive Mobile Interface
-🚀 GETTING STARTED
+
+---
+
+## 🚀 GETTING STARTED
 
 TaskFlow requires no package manager, build system, or dependency installation.
 
@@ -235,7 +257,9 @@ http://localhost:8000
 
 The project can also be launched with the Live Server extension for Visual Studio Code.
 
-💾 DATA PERSISTENCE
+---
+
+## 💾 DATA PERSISTENCE
 
 TaskFlow stores its workspace locally under:
 
@@ -278,7 +302,9 @@ Loads the normalized state.
 
 If a repair is performed, the user receives a notification.
 
-BACKUP & RESTORE
+---
+
+## BACKUP & RESTORE
 
 Navigate to:
 
@@ -292,7 +318,9 @@ Reset to the demo dataset
 
 Storage failures, including localStorage.setItem() errors caused by browser restrictions or storage limits, are reported through the application UI.
 
-🧪 TESTING & VALIDATION
+---
+
+## 🧪 TESTING & VALIDATION
 
 TaskFlow does not currently use an external testing framework.
 
@@ -333,7 +361,9 @@ runStatisticsTests();
 
 Results are reported through the console and application interface.
 
-🧠 TECHNICAL LEARNING & ENGINEERING EXPERIENCE
+---
+
+## 🧠 TECHNICAL LEARNING & ENGINEERING EXPERIENCE
 
 TaskFlow provided hands-on experience across several areas of frontend engineering.
 
@@ -381,7 +411,9 @@ ZERO-DEPENDENCY DEVELOPMENT
 
 The project demonstrates that complex productivity interfaces can be implemented using the native web platform without relying on external frameworks or component libraries.
 
-🗺️ ROADMAP
+---
+
+## 🗺️ ROADMAP
 
 The following capabilities are planned for future versions and are not currently implemented.
 
@@ -401,20 +433,29 @@ The following capabilities are planned for future versions and are not currently
  Authentication and role-based permissions
  Cloud database
  Real-time synchronization
-👨‍💻 AUTHOR
+
+ ---
+ 
+## 👨‍💻 AUTHOR
 
 MEGHARI Abderrahmane Tarek
 
 Junior Full Stack Developer & Computer Science Student
 
-<p> <a href="https://github.com/tarek200614">GitHub</a> • <a href="https://www.linkedin.com/in/tarek-meghari/">LinkedIn</a> • <a href="mailto:megharitarek06@gmail.com">Email</a> </p>
-📄 LICENSE
+<p> <a href="https://github.com/tarek200614">GitHub</a> • <a href="https://www.linkedin.com/in/abderrahmane-tarek-meghari">LinkedIn</a> • <a href="meghariabderrhmanetarek@gmail.com">Email</a> </p>
+
+---
+
+## 📄 LICENSE
 
 This project is licensed under the MIT License.
 
 See the LICENSE file for the complete license text.
 
-⭐ ACKNOWLEDGMENTS
+---
+
+## ⭐ ACKNOWLEDGMENTS
+
 MDN Web Docs — Technical documentation and references for JavaScript, LocalStorage, HTML5 Drag & Drop, SVG, and native browser APIs.
 Native Web Platform — CSS Grid, Flexbox, CSS Custom Properties, HTML5 APIs, SVG, and other browser standards.
 Open-Source Community — Inspiration from modern productivity applications and minimalist SaaS design.
