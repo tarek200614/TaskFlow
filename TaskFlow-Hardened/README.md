@@ -220,7 +220,6 @@ This keeps the project easy to inspect, run, and understand while still supporti
 ## 📸 SCREENSHOTS
 
 Screenshots will be added as the project documentation is updated.
-
 Planned views include:
 
 Dashboard
