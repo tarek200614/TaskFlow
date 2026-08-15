@@ -100,7 +100,8 @@ TaskFlow/
 ├── script.js             # Core TaskFlow logic, state management, UI handlers, and LocalStorage engine
 ├── LICENSE               # Project license (MIT)
 └── README.md             # Project documentation
-
+---
+```text
 ## 🚀 Installation
 
 ### 1. Clone the repository
