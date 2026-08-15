@@ -82,9 +82,9 @@ A dedicated task-management interface designed for efficient organization, filte
 - Optional task descriptions
 - Due-date management
 - Project assignment
-
+```text
 Backlog → Todo → In Progress → Review → Done
-
+```
 ---
 
 ## 🗃️ KANBAN WORKFLOW
