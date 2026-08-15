@@ -1,504 +1,112 @@
-# TaskFlow
 
-### PREMIUM SAAS TASK & PROJECT MANAGEMENT PLATFORM
+# TaskFlow — Premium Enterprise SaaS Task Management Platform
 
-A production-oriented task and project management application built from the ground up with **Vanilla HTML5, CSS3, and JavaScript (ES6+)** — with **zero external dependencies**.
+**TaskFlow** is a high-performance, commercial-grade SaaS task and project management web application built entirely with modern Vanilla HTML5, CSS3, and JavaScript (ES6+). Designed with a dark SaaS aesthetic inspired by Linear, ClickUp, and Notion.
 
-<p align="center">
-  <a href="#-features">FEATURES</a> •
-  <a href="#-technology-stack">TECHNOLOGY</a> •
-  <a href="#-architecture">ARCHITECTURE</a> •
-  <a href="#-getting-started">GETTING STARTED</a> •
-  <a href="#-data-persistence">PERSISTENCE</a> •
-  <a href="#-testing--validation">TESTING</a> •
-  <a href="#-roadmap">ROADMAP</a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript ES6+">
-  <img src="https://img.shields.io/badge/Dependencies-0-111827?style=flat-square" alt="Zero Dependencies">
-  <img src="https://img.shields.io/badge/License-MIT-7C3AED?style=flat-square" alt="MIT License">
-</p>
+Created & Developed by **MEGHARI Abderrahmane Tarek** (Owner & Lead Engineer).
 
 ---
 
-## 📌 OVERVIEW
+## 🌟 Key Features
 
-**TaskFlow** is a modern, client-side task and project management application designed around a SaaS-style productivity workflow.
-
-It combines a polished dark interface with practical productivity functionality, including:
-
-- Interactive analytics dashboard
-- Kanban workflow management
-- Advanced task table
-- Global command palette
-- Quick task creation
-- Local workspace persistence
-- JSON backup and recovery
-- Data validation and recovery
-- Storage schema versioning
-- Responsive mobile experience
-- Built-in diagnostic testing
-
-TaskFlow is intentionally implemented using the **native web platform**, without React, Vue, Angular, external UI libraries, or npm packages.
-
-The project demonstrates how a feature-rich productivity interface can be engineered using **Vanilla HTML5, CSS3, and JavaScript (ES6+)** while maintaining a lightweight and inspectable architecture.
-
-**Created & Developed by MEGHARI Abderrahmane Tarek**
+- **Dark SaaS Interface**: Deep navy background (`#07111F`), dark surface cards (`#101F31`), and purple/violet gradient accent system (`#7C3AED` -> `#8B5CF6`).
+- **Interactive Analytics Dashboard**:
+  - Greeting header customized for **MEGHARI Abderrahmane Tarek**.
+  - Dynamic KPI cards (Total Tasks, Completed, In Progress, Overdue).
+  - Custom zero-dependency SVG Area Chart (Productivity Overview) and Status Donut Chart.
+  - Dedicated 7-Column Calendar with active day highlight & today's event timeline.
+  - Project Progress, Upcoming Deadlines, Priority Breakdown, and Activity Feed.
+- **Kanban Board**: Native HTML5 Drag and Drop API (`draggable="true"`) for dragging task cards between workflow columns (`Backlog`, `Todo`, `In Progress`, `Review`, `Done`).
+- **My Tasks View**: Data table view with multi-column sorting (Title, Status, Priority, Due Date), status/priority/project filtering, global search, and bulk selection.
+- **Global Command Palette (`⌘K` / `Ctrl+K`)**: Instant fuzzy search and route switcher across tasks, projects, and views.
+- **Quick Create Drawer (`C`)**: Modal for task creation with validation, including an optional task description field.
+- **Task Descriptions**: Every task supports an optional, safely-escaped description field, editable from both the Create and Edit modals.
+- **Workspace Data Persistence**: Seamless LocalStorage engine under `taskflow_data_v1` with JSON file export and backup importer.
+- **Data Validation & Recovery**: A dedicated normalization layer repairs malformed or incomplete saved data (missing collections, invalid task fields, corrupted JSON) instead of crashing, and tells the user when a repair happened.
+- **Storage Schema Versioning**: Persisted data carries a `schemaVersion` field with a lightweight migration hook for future schema changes.
+- **Accessible Modals**: Every modal closes on `Escape` or on a click outside the modal card, and all form fields have properly associated `<label>` elements.
+- **100% Responsive Layout**: Mobile touch drawer navigation, scaling seamlessly down to 320px screen width with zero horizontal overflow (verified from 320px through 1920px).
 
 ---
 
-## ✨ FEATURES
+## 🛠️ Technology Stack
 
-### 📊 Dashboard & Analytics
-
-A centralized workspace dashboard providing a visual overview of project activity and productivity.
-
-- Dynamic KPI cards
-- Total, completed, in-progress, and overdue task metrics
-- SVG productivity overview area chart
-- SVG status donut chart
-- Project progress tracking
-- Priority breakdown
-- Upcoming deadlines
-- Activity feed
-- Seven-column calendar
-- Active-day highlighting
-- Today's event timeline
-
-### 📋 Task Management
-
-A dedicated task-management interface designed for efficient organization, filtering, and navigation.
-
-- Searchable task table
-- Multi-column sorting
-- Status filtering
-- Priority filtering
-- Project filtering
-- Bulk task selection
-- Task creation and editing
-- Optional task descriptions
-- Due-date management
-- Project assignment
-
-### 🗃️ Kanban Workflow
-
-TaskFlow provides an interactive Kanban board powered by the native **HTML5 Drag & Drop API**.
-
-Tasks can be moved between five workflow states:
-
-```text
-Backlog → Todo → In Progress → Review → Done
-
-## 🗃️ KANBAN WORKFLOW
-
-A native drag-and-drop workflow board powered by the HTML5 Drag & Drop API.
-
-Tasks move through five workflow states:
-
-Backlog → Todo → In Progress → Review → Done
-⌘ COMMAND PALETTE
-
-A global navigation and search interface for quickly moving through the application.
-
-Platform	Shortcut
-Windows / Linux	Ctrl + K
-macOS	⌘ + K
-
-The command palette provides access to tasks, projects, and application views.
+- **Frontend Core**: Vanilla HTML5, CSS3 Custom Properties, Modern JavaScript (ES6+)
+- **Storage**: Browser LocalStorage
+- **Design System**: Dark Navy Theme, Glassmorphism, CSS Grid & Flexbox, Custom SVG Icons
+- **Dependencies**: 0 external libraries or npm packages (100% Native Web Standards)
 
 ---
 
-## ➕ QUICK CREATE
+## 🗂️ Project Structure
 
-Press C to open the task creation drawer.
-
-Includes:
-
-Input validation
-Optional descriptions
-Priority selection
-Project assignment
-Due-date management
-💾 PERSISTENT WORKSPACE
-
-TaskFlow persists workspace data locally using the browser's LocalStorage API.
-
-Supported data includes:
-
-Tasks
-Projects
-Activity
-Workspace settings
-
-The application also supports:
-
-JSON workspace export
-JSON backup import
-Demo-data reset
-
----
-
-## 🛡️ DATA VALIDATION & RECOVERY
-
-TaskFlow includes a dedicated normalization and recovery layer designed to prevent malformed local data from crashing the application.
-
-It handles:
-
-Corrupted JSON
-Missing collections
-Invalid task fields
-Invalid project fields
-Malformed objects
-Missing project references
-Incomplete workspace data
-
-When recovery is required, the application notifies the user.
-
----
-
-## 🔄 STORAGE SCHEMA VERSIONING
-
-Persisted workspace data contains a schemaVersion value.
-
-A lightweight migration mechanism allows the application to evolve its storage format while maintaining compatibility with previously stored workspace data.
-
----
-
-## 📱 RESPONSIVE EXPERIENCE
-
-The interface is designed for a wide range of screen sizes, with responsive behavior verified from approximately 320px to 1920px.
-
-The mobile experience includes:
-
-Touch-friendly navigation
-Responsive sidebar drawer
-Adaptive cards
-Responsive tables
-Mobile-friendly task interactions
-No intentional horizontal overflow
-
----
-
-## ♿ ACCESSIBILITY
-
-Implemented accessibility practices include:
-
-Properly associated form labels
-Keyboard-accessible controls
-aria-label attributes where appropriate
-Keyboard-accessible profile button
-Escape-to-close modals
-Click-outside modal closing
-
----
-
-## 🛠️ TECHNOLOGY STACK
-Technology	Purpose
-HTML5	Semantic application structure
-CSS3	Design system, responsive layouts, Grid, Flexbox, animations
-JavaScript ES6+	Application logic, state, rendering, routing and interactions
-LocalStorage API	Client-side workspace persistence
-FileReader API	Local JSON backup importing
-HTML5 Drag & Drop API	Kanban interactions
-SVG	Zero-dependency charts and interface graphics
-ZERO DEPENDENCIES
-
-TaskFlow uses:
-
-0 external libraries · 0 npm packages · 0 frameworks
-
-Everything is implemented using native browser APIs and modern web standards.
-
----
-
-## 🏗️ ARCHITECTURE
-```text
-TaskFlow/
-├── assets/
-│   └── favicon.svg      # Application vector favicon
-├── js/
-│   └── statistics.js    # Task and productivity statistics calculations & test suite
-├── index.html           # Main single-page application interface and modals
-├── style.css            # Complete design system, layouts, and responsive styles
-├── script.js            # Core state engine, DOM controller, persistence, and event listeners
-├── LICENSE              # MIT License
-└── README.md            # Application documentation
-TaskFlow follows a deliberately lightweight client-side architecture.
-
-CORE FILES
-File	Responsibility
-index.html	## Application shell and interface structure
-style.css	## Complete visual system and responsive styling
-script.js	## Application state, rendering, controllers, storage and validation
-js/statistics.js	## Centralized statistics calculations and diagnostic tests
-assets/favicon.svg	## Application favicon
-ARCHITECTURE PRINCIPLES
-
-The project intentionally maintains:
-
-1 active stylesheet
-1 main application script
-1 statistics module
-0 external dependencies
-
-This keeps the project easy to inspect, run, and understand while still supporting complex interactive functionality.
 ```
----
+TaskFlow/
+├── index.html          # App shell (sidebar, topbar, route container)
+├── style.css            # Complete active design system (single stylesheet)
+├── script.js             # App state, render engine, controller, storage & validation
+├── js/
+│   └── statistics.js     # Single source of truth for all statistics calculations
+├── assets/
+│   └── favicon.svg
+├── LICENSE
+└── README.md
+```
 
-## 📸 SCREENSHOTS
-
-Screenshots will be added as the project documentation is updated.
-Planned views include:
-
-Dashboard
-
-Kanban Board
-
-My Tasks
-
-Analytics
-
-Calendar
-
-Responsive Mobile Interface
+Only the files above are loaded by `index.html` / referenced by the app. There is exactly one JavaScript statistics implementation (`js/statistics.js`) and one active stylesheet (`style.css`).
 
 ---
 
-## 🚀 GETTING STARTED
+## 🚀 Getting Started
 
-TaskFlow requires no package manager, build system, or dependency installation.
+Simply open `index.html` in any modern web browser or serve locally using any static web server:
 
-1. CLONE THE REPOSITORY
-git clone https://github.com/tarek200614/TaskFlow.git
-cd TaskFlow
-2. OPEN THE APPLICATION
-
-Open the following file in a modern browser:
-
-index.html
-3. RUN WITH PYTHON
-
-From the project directory:
-
+```bash
+# Python simple HTTP server
 python -m http.server 8000
+```
 
-Then visit:
-
-http://localhost:8000
-4. USE VS CODE
-
-The project can also be launched with the Live Server extension for Visual Studio Code.
+Then visit `http://localhost:8000` in your web browser.
 
 ---
 
-## 💾 DATA PERSISTENCE
+## 💾 How Data Is Stored
 
-TaskFlow stores its workspace locally under:
+All workspace data (tasks, projects, activity, settings) lives in the browser's `localStorage` under the key `taskflow_data_v1`. On every load, the raw value is:
 
-taskflow_data_v1
-DATA LOADING PIPELINE
+1. Parsed as JSON (a corrupted/unparseable value falls back to a fresh demo dataset).
+2. Migrated if it was written by an older schema version.
+3. Validated and repaired field-by-field — missing arrays are filled with safe defaults, malformed task/project objects are dropped, and any task pointing at a missing project is reattached to a valid one.
 
-When the application loads, stored data goes through the following process:
+If a repair was necessary, a toast notification lets you know. If a `localStorage.setItem()` write ever fails (e.g. quota exceeded, private browsing restrictions), the app shows a toast instead of silently losing your changes.
 
-LocalStorage
-     │
-     ▼
-JSON Parsing
-     │
-     ▼
-Schema Check
-     │
-     ▼
-Migration
-     │
-     ▼
-Validation
-     │
-     ▼
-Normalization
-     │
-     ▼
-Recovered Workspace
-
-The application:
-
-Reads the stored LocalStorage value.
-Parses it as JSON.
-Recovers from corrupted data when necessary.
-Checks schemaVersion.
-Runs migration logic when required.
-Validates workspace collections.
-Validates task and project objects.
-Repairs invalid project references.
-Loads the normalized state.
-
-If a repair is performed, the user receives a notification.
+Use **Settings → Workspace Data Backup** to export the full workspace to a JSON file, import a previous backup, or reset back to the demo dataset.
 
 ---
 
-## BACKUP & RESTORE
+## ♿ Accessibility
 
-Navigate to:
-
-Settings → Workspace Data Backup
-
-Available operations:
-
-Export workspace as JSON
-Import an existing JSON backup
-Reset to the demo dataset
-
-Storage failures, including localStorage.setItem() errors caused by browser restrictions or storage limits, are reported through the application UI.
+- All Create/Edit task form fields have `<label for="...">` elements pointing at a matching input `id`.
+- The profile avatar in the top bar is a real `<button>` with an `aria-label`, reachable and activatable via keyboard (`Tab` + `Enter`/`Space`).
+- Modals can always be closed with `Escape` or by clicking outside the modal card.
 
 ---
 
-## 🧪 TESTING & VALIDATION
+## 🧪 Testing
 
-TaskFlow does not currently use an external testing framework.
+There is no external test framework dependency — this stays a zero-dependency Vanilla JS project. Instead:
 
-Instead, it includes a built-in assertion-based diagnostic system while maintaining its zero-dependency architecture.
+- `js/statistics.js` exposes `TaskFlowStats.runStatisticsTests()`, a self-contained assertion suite covering totals, completion rate, overdue detection (including the "completed but overdue date" edge case), project progress, status breakdowns, and upcoming deadlines.
+- `script.js` exposes `window.runStatisticsTests()` (also wired to the dashboard's "Run Diagnostics" button), which runs the statistics suite plus data-normalization/recovery assertions and reports pass/fail to both the console and a toast.
 
-STATISTICS TESTS
+Run it from the browser console at any time:
 
-js/statistics.js exposes:
-
-TaskFlowStats.runStatisticsTests();
-
-The suite validates:
-
-Task totals
-Completion percentages
-Overdue calculations
-Project progress
-Status breakdowns
-Upcoming deadlines
-Completed tasks with past due dates
-Statistics edge cases
-APPLICATION DIAGNOSTICS
-
-script.js exposes:
-
-window.runStatisticsTests();
-
-This combines:
-
-Statistics assertions
-Data-normalization checks
-Data-recovery assertions
-RUN DIAGNOSTICS
-
-Open the browser developer console and execute:
-
+```js
 runStatisticsTests();
-
-Results are reported through the console and application interface.
-
----
-
-## 🧠 TECHNICAL LEARNING & ENGINEERING EXPERIENCE
-
-TaskFlow provided hands-on experience across several areas of frontend engineering.
-
-FRONTEND ARCHITECTURE
-Single-page application architecture
-State-driven rendering
-Separation of application state and UI
-Client-side routing
-Custom design-system implementation
-MODERN JAVASCRIPT
-ES6+ syntax
-Event delegation
-Array transformation pipelines
-State management
-Modular architecture
-Dynamic DOM rendering
-NATIVE BROWSER APIS
-
-Practical implementation of:
-
-LocalStorage
-FileReader
-HTML5 Drag & Drop
-SVG
-Keyboard events
-Browser storage APIs
-DATA ENGINEERING & RESILIENCE
-Data normalization
-Schema versioning
-Migration logic
-Corrupted-data recovery
-Defensive validation
-Invalid-reference recovery
-UI ENGINEERING
-Responsive layouts
-CSS Grid
-Flexbox
-Modal systems
-Drawers
-Command palettes
-Data tables
-Interactive charts
-Mobile navigation
-ZERO-DEPENDENCY DEVELOPMENT
-
-The project demonstrates that complex productivity interfaces can be implemented using the native web platform without relying on external frameworks or component libraries.
+```
 
 ---
 
-## 🗺️ ROADMAP
+## 📄 License
 
-The following capabilities are planned for future versions and are not currently implemented.
-
- Cloud synchronization through a REST API
- Progressive Web App support
- Service-worker-based offline functionality
- Advanced time tracking
- Productivity history and reporting
- Custom Kanban columns
- Custom tag colors
- Workspace themes
- Automated unit testing
- End-to-end testing with Playwright
- Testing with Vitest
- Backend architecture
- Multi-user workspaces
- Authentication and role-based permissions
- Cloud database
- Real-time synchronization
-
- ---
- 
-## 👨‍💻 AUTHOR
-
-MEGHARI Abderrahmane Tarek
-
-Junior Full Stack Developer & Computer Science Student
-
-<p> <a href="https://github.com/tarek200614">GitHub</a> • <a href="https://www.linkedin.com/in/abderrahmane-tarek-meghari">LinkedIn</a> • <a href="meghariabderrhmanetarek@gmail.com">Email</a> </p>
-
----
-
-## 📄 LICENSE
-
-This project is licensed under the MIT License.
-
-See the LICENSE file for the complete license text.
-
----
-
-## ⭐ ACKNOWLEDGMENTS
-
-MDN Web Docs — Technical documentation and references for JavaScript, LocalStorage, HTML5 Drag & Drop, SVG, and native browser APIs.
-Native Web Platform — CSS Grid, Flexbox, CSS Custom Properties, HTML5 APIs, SVG, and other browser standards.
-Open-Source Community — Inspiration from modern productivity applications and minimalist SaaS design.
-<div align="center">
-TASKFLOW
-
-Built from the ground up with the native web platform.
-
-If you find the project interesting, consider giving it a ⭐ on GitHub.
-
-</div>
+MIT License — Created by **MEGHARI Abderrahmane Tarek**.
