@@ -85,6 +85,8 @@ A dedicated task-management interface designed for efficient organization, filte
 
 Backlog → Todo → In Progress → Review → Done
 
+---
+
 ## 🗃️ KANBAN WORKFLOW
 
 A native drag-and-drop workflow board powered by the HTML5 Drag & Drop API.
