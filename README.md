@@ -6,7 +6,7 @@ A production-oriented task and project management application built from the gro
 
 <p align="center">
   <a href="#-features">FEATURES</a> •
-  <a href="#-technology-stack">TECHNOLOGY</a> •
+  <a href="#-kanban-workflow">TECHNOLOGY</a> •
   <a href="#-architecture">ARCHITECTURE</a> •
   <a href="#-getting-started">GETTING STARTED</a> •
   <a href="#-data-persistence">PERSISTENCE</a> •
