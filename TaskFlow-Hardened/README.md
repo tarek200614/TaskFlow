@@ -224,10 +224,15 @@ Screenshots will be added as the project documentation is updated.
 Planned views include:
 
 Dashboard
+
 Kanban Board
+
 My Tasks
+
 Analytics
+
 Calendar
+
 Responsive Mobile Interface
 
 ---
