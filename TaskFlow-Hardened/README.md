@@ -206,4 +206,50 @@ Review
 Done
 
 ```text
-Ctrl + K
+---
+
+# 🧩 Application Architecture
+
+TaskFlow follows a lightweight client-side architecture designed around a centralized application state and reusable rendering logic.
+
+```text
+                    ┌─────────────────────┐
+                    │      User Input     │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   Event Handlers    │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   Application State │
+                    └──────────┬──────────┘
+                               │
+                 ┌─────────────┴─────────────┐
+                 ▼                           ▼
+        ┌─────────────────┐         ┌─────────────────┐
+        │ Data Validation │         │   Statistics    │
+        │ & Normalization │         │     Engine      │
+        └────────┬────────┘         └────────┬────────┘
+                 │                           │
+                 └─────────────┬─────────────┘
+                               ▼
+                    ┌─────────────────────┐
+                    │    LocalStorage     │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │    Render Engine    │
+                    └──────────┬──────────┘
+                               │
+              ┌────────────────┼────────────────┐
+              ▼                ▼                ▼
+         Dashboard          Kanban           Calendar
+              │
+              ▼
+          My Tasks
+---
+
