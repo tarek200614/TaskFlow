@@ -297,7 +297,7 @@ taskflow_data_v1
 DATA LOADING PIPELINE
 
 When the application loads, stored data goes through the following process:
-
+```text
 LocalStorage
      │
      ▼
@@ -317,7 +317,7 @@ Normalization
      │
      ▼
 Recovered Workspace
-
+```
 The application:
 
 Reads the stored LocalStorage value.
