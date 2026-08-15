@@ -1,111 +1,127 @@
-# TaskFlow — Premium Enterprise SaaS Task Management Platform
+# 📋 TaskFlow — Task Management Web Application
 
-**TaskFlow** is a high-performance, commercial-grade SaaS task and project management web application built entirely with modern Vanilla HTML5, CSS3, and JavaScript (ES6+). Designed with a dark SaaS aesthetic inspired by Linear, ClickUp, and Notion.
+<div align="center">
 
-Created & Developed by **MEGHARI Abderrahmane Tarek** (Owner & Lead Engineer).
+<h3>A Modern Task & Project Management Dashboard Built with Vanilla JavaScript</h3>
 
----
+<p>
+Clean • Responsive • Interactive • Dynamic • Zero Dependencies
+</p>
 
-## 🌟 Key Features
+<p>
 
-- **Dark SaaS Interface**: Deep navy background (`#07111F`), dark surface cards (`#101F31`), and purple/violet gradient accent system (`#7C3AED` -> `#8B5CF6`).
-- **Interactive Analytics Dashboard**:
-  - Greeting header customized for **MEGHARI Abderrahmane Tarek**.
-  - Dynamic KPI cards (Total Tasks, Completed, In Progress, Overdue).
-  - Custom zero-dependency SVG Area Chart (Productivity Overview) and Status Donut Chart.
-  - Dedicated 7-Column Calendar with active day highlight & today's event timeline.
-  - Project Progress, Upcoming Deadlines, Priority Breakdown, and Activity Feed.
-- **Kanban Board**: Native HTML5 Drag and Drop API (`draggable="true"`) for dragging task cards between workflow columns (`Backlog`, `Todo`, `In Progress`, `Review`, `Done`).
-- **My Tasks View**: Data table view with multi-column sorting (Title, Status, Priority, Due Date), status/priority/project filtering, global search, and bulk selection.
-- **Global Command Palette (`⌘K` / `Ctrl+K`)**: Instant fuzzy search and route switcher across tasks, projects, and views.
-- **Quick Create Drawer (`C`)**: Modal for task creation with validation, including an optional task description field.
-- **Task Descriptions**: Every task supports an optional, safely-escaped description field, editable from both the Create and Edit modals.
-- **Workspace Data Persistence**: Seamless LocalStorage engine under `taskflow_data_v1` with JSON file export and backup importer.
-- **Data Validation & Recovery**: A dedicated normalization layer repairs malformed or incomplete saved data (missing collections, invalid task fields, corrupted JSON) instead of crashing, and tells the user when a repair happened.
-- **Storage Schema Versioning**: Persisted data carries a `schemaVersion` field with a lightweight migration hook for future schema changes.
-- **Accessible Modals**: Every modal closes on `Escape` or on a click outside the modal card, and all form fields have properly associated `<label>` elements.
-- **100% Responsive Layout**: Mobile touch drawer navigation, scaling seamlessly down to 320px screen width with zero horizontal overflow (verified from 320px through 1920px).
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![LocalStorage](https://img.shields.io/badge/Storage-LocalStorage-7C3AED?style=for-the-badge)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-22C55E?style=for-the-badge)
+
+</p>
+
+</div>
 
 ---
 
-## 🛠️ Technology Stack
+## 📖 About The Project
 
-- **Frontend Core**: Vanilla HTML5, CSS3 Custom Properties, Modern JavaScript (ES6+)
-- **Storage**: Browser LocalStorage
-- **Design System**: Dark Navy Theme, Glassmorphism, CSS Grid & Flexbox, Custom SVG Icons
-- **Dependencies**: 0 external libraries or npm packages (100% Native Web Standards)
+**TaskFlow** is a modern task and project management web application developed using **HTML5, CSS3 and Vanilla JavaScript**.
 
----
+The application provides an interactive dashboard for managing tasks, monitoring productivity, organizing projects and visualizing progress through multiple views.
 
-## 🗂️ Project Structure
+The project was designed to demonstrate practical frontend development skills including:
 
-```
-TaskFlow/
-├── index.html          # App shell (sidebar, topbar, route container)
-├── style.css            # Complete active design system (single stylesheet)
-├── script.js             # App state, render engine, controller, storage & validation
-├── js/
-│   └── statistics.js     # Single source of truth for all statistics calculations
-├── assets/
-│   └── favicon.svg
-├── LICENSE
-└── README.md
-```
+- Modern UI/UX design
+- JavaScript application architecture
+- DOM manipulation
+- State management
+- LocalStorage persistence
+- Data validation and recovery
+- Dynamic statistics
+- Responsive web design
+- Accessibility
+- Interactive interfaces
 
-Only the files above are loaded by `index.html` / referenced by the app. There is exactly one JavaScript statistics implementation (`js/statistics.js`) and one active stylesheet (`style.css`).
+The project uses **zero external libraries or frameworks**, relying entirely on native web technologies.
 
 ---
 
-## 🚀 Getting Started
+## ✨ Features
 
-Simply open `index.html` in any modern web browser or serve locally using any static web server:
+### 📊 Dashboard
 
-```bash
-# Python simple HTTP server
-python -m http.server 8000
-```
+- Dynamic task statistics
+- Total tasks
+- Completed tasks
+- Tasks in progress
+- Overdue tasks
+- Completion rate
+- Productivity overview
+- Task status distribution
+- Priority breakdown
+- Project progress
+- Upcoming deadlines
+- Recent activity
 
-Then visit `http://localhost:8000` in your web browser.
+### ✅ Task Management
 
----
+- Create tasks
+- Edit tasks
+- Delete tasks
+- Task descriptions
+- Task status
+- Task priority
+- Project assignment
+- Due dates
+- Task persistence
+- Task validation
 
-## 💾 How Data Is Stored
+### 📋 Kanban Board
 
-All workspace data (tasks, projects, activity, settings) lives in the browser's `localStorage` under the key `taskflow_data_v1`. On every load, the raw value is:
+Interactive Kanban workflow with:
 
-1. Parsed as JSON (a corrupted/unparseable value falls back to a fresh demo dataset).
-2. Migrated if it was written by an older schema version.
-3. Validated and repaired field-by-field — missing arrays are filled with safe defaults, malformed task/project objects are dropped, and any task pointing at a missing project is reattached to a valid one.
+- Backlog
+- Todo
+- In Progress
+- Review
+- Done
 
-If a repair was necessary, a toast notification lets you know. If a `localStorage.setItem()` write ever fails (e.g. quota exceeded, private browsing restrictions), the app shows a toast instead of silently losing your changes.
+Tasks can be moved between columns using the native **HTML5 Drag & Drop API**.
 
-Use **Settings → Workspace Data Backup** to export the full workspace to a JSON file, import a previous backup, or reset back to the demo dataset.
+### 📅 Calendar
 
----
+- Monthly calendar interface
+- Dynamic dates
+- Task due dates
+- Active date selection
+- Daily task timeline
+- Task creation based on selected dates
 
-## ♿ Accessibility
+### 📈 Statistics
 
-- All Create/Edit task form fields have `<label for="...">` elements pointing at a matching input `id`.
-- The profile avatar in the top bar is a real `<button>` with an `aria-label`, reachable and activatable via keyboard (`Tab` + `Enter`/`Space`).
-- Modals can always be closed with `Escape` or by clicking outside the modal card.
+Task statistics are calculated dynamically from the application data.
 
----
+The application provides:
 
-## 🧪 Testing
+- Completion rate
+- Status distribution
+- Priority distribution
+- Overdue task detection
+- Project progress
+- Upcoming deadlines
+- Productivity information
 
-There is no external test framework dependency — this stays a zero-dependency Vanilla JS project. Instead:
+### 🔎 Search & Filtering
 
-- `js/statistics.js` exposes `TaskFlowStats.runStatisticsTests()`, a self-contained assertion suite covering totals, completion rate, overdue detection (including the "completed but overdue date" edge case), project progress, status breakdowns, and upcoming deadlines.
-- `script.js` exposes `window.runStatisticsTests()` (also wired to the dashboard's "Run Diagnostics" button), which runs the statistics suite plus data-normalization/recovery assertions and reports pass/fail to both the console and a toast.
+- Global task search
+- Status filtering
+- Priority filtering
+- Project filtering
+- Multi-column sorting
+- Task selection
 
-Run it from the browser console at any time:
+### ⌨️ Command Palette
 
-```js
-runStatisticsTests();
-```
+Quick navigation using:
 
----
-
-## 📄 License
-
-MIT License — Created by **MEGHARI Abderrahmane Tarek**.
+```text
+Ctrl + K
