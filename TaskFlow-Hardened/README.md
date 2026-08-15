@@ -5,6 +5,8 @@ A production-oriented task management experience built from the ground up with V
 
 <p align="center"> <a href="#-features">FEATURES</a> • <a href="#-technology-stack">TECHNOLOGY</a> • <a href="#-architecture">ARCHITECTURE</a> • <a href="#-getting-started">GETTING STARTED</a> • <a href="#-testing--validation">TESTING</a> • <a href="#-roadmap">ROADMAP</a> </p> <p align="center"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"> <img src="https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript ES6+"> <img src="https://img.shields.io/badge/Dependencies-0-111827?style=flat-square" alt="Zero Dependencies"> <img src="https://img.shields.io/badge/License-MIT-7C3AED?style=flat-square" alt="MIT License"> </p>
 
+---
+
 ## 📌 Overview
 
 TaskFlow is a high-performance, client-side task and project management application designed around a modern SaaS workflow.
@@ -25,7 +27,9 @@ TaskFlow is intentionally implemented using native web technologies only, demons
 
 Created & Developed by MEGHARI Abderrahmane Tarek
 
-✨ FEATURES
+---
+
+## ✨ Features
 📊 Dashboard & Analytics
 
 A centralized workspace dashboard providing an overview of project activity and productivity.
@@ -54,6 +58,9 @@ Task creation and editing
 Optional task descriptions
 Due-date management
 Project assignment
+
+---
+
 🗃️ KANBAN WORKFLOW
 
 A native drag-and-drop workflow board powered by the HTML5 Drag & Drop API.
