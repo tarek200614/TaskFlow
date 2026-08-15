@@ -122,6 +122,88 @@ The application provides:
 ### ⌨️ Command Palette
 
 Quick navigation using:
+---
+
+# 📊 Application Overview
+
+TaskFlow is organized around several interconnected views that allow users to manage their work efficiently.
+
+## 🏠 Dashboard
+
+The dashboard provides a centralized overview of the workspace.
+
+It displays:
+
+- Total number of tasks
+- Completed tasks
+- Tasks currently in progress
+- Overdue tasks
+- Completion rate
+- Productivity overview
+- Task status distribution
+- Priority distribution
+- Project progress
+- Upcoming deadlines
+- Recent activity
+
+All statistics are calculated dynamically from the current application state.
+
+---
+
+## 📋 My Tasks
+
+The **My Tasks** section provides a complete task management interface.
+
+### Available operations
+
+- Create a task
+- Edit a task
+- Delete a task
+- Search tasks
+- Filter tasks
+- Sort tasks
+- Select multiple tasks
+- Change task status
+- Change task priority
+- Assign projects
+- Set due dates
+- Add task descriptions
+
+### Sorting
+
+Tasks can be sorted by:
+
+- Title
+- Status
+- Priority
+- Due Date
+
+### Filtering
+
+Available filters include:
+
+- Status
+- Priority
+- Project
+
+---
+
+# 🗂️ Kanban Board
+
+TaskFlow includes an interactive Kanban board for visual workflow management.
+
+Tasks are organized into five workflow stages:
+
+```text
+Backlog
+   ↓
+Todo
+   ↓
+In Progress
+   ↓
+Review
+   ↓
+Done
 
 ```text
 Ctrl + K
