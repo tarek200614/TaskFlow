@@ -184,19 +184,19 @@ Everything is implemented using native browser APIs and modern web standards.
 ---
 
 ## 🏗️ ARCHITECTURE
-
+```text
+TaskFlow/
+├── assets/
+│   └── favicon.svg      # Application vector favicon
+├── js/
+│   └── statistics.js    # Task and productivity statistics calculations & test suite
+├── index.html           # Main single-page application interface and modals
+├── style.css            # Complete design system, layouts, and responsive styles
+├── script.js            # Core state engine, DOM controller, persistence, and event listeners
+├── LICENSE              # MIT License
+└── README.md            # Application documentation
 TaskFlow follows a deliberately lightweight client-side architecture.
 
-TaskFlow/
-├── index.html
-├── style.css
-├── script.js
-├── js/
-│   └── statistics.js
-├── assets/
-│   └── favicon.svg
-├── LICENSE
-└── README.md
 CORE FILES
 File	Responsibility
 index.html	Application shell and interface structure
@@ -214,7 +214,7 @@ The project intentionally maintains:
 0 external dependencies
 
 This keeps the project easy to inspect, run, and understand while still supporting complex interactive functionality.
-
+```
 ---
 
 ## 📸 SCREENSHOTS
