@@ -249,7 +249,7 @@ Screenshots will be added as the project documentation is updated.
 Planned views include:
 
 Dashboard
-
+<img width="1886" height="901" alt="image" src="https://github.com/user-attachments/assets/7b0b5012-04af-4141-8de4-36b8b353c2a3" />
 Kanban Board
 
 My Tasks
