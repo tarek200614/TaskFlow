@@ -1,65 +1,96 @@
-## TaskFlow
-# PREMIUM SAAS TASK & PROJECT MANAGEMENT PLATFORM
+# TaskFlow
 
-A production-oriented task management experience built from the ground up with Vanilla HTML5, CSS3, and JavaScript (ES6+) — with zero external dependencies.
+### PREMIUM SAAS TASK & PROJECT MANAGEMENT PLATFORM
 
-<p align="center"> <a href="#-features">FEATURES</a> • <a href="#-technology-stack">TECHNOLOGY</a> • <a href="#-architecture">ARCHITECTURE</a> • <a href="#-getting-started">GETTING STARTED</a> • <a href="#-testing--validation">TESTING</a> • <a href="#-roadmap">ROADMAP</a> </p> <p align="center"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"> <img src="https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript ES6+"> <img src="https://img.shields.io/badge/Dependencies-0-111827?style=flat-square" alt="Zero Dependencies"> <img src="https://img.shields.io/badge/License-MIT-7C3AED?style=flat-square" alt="MIT License"> </p>
+A production-oriented task and project management application built from the ground up with **Vanilla HTML5, CSS3, and JavaScript (ES6+)** — with **zero external dependencies**.
 
----
+<p align="center">
+  <a href="#-features">FEATURES</a> •
+  <a href="#-technology-stack">TECHNOLOGY</a> •
+  <a href="#-architecture">ARCHITECTURE</a> •
+  <a href="#-getting-started">GETTING STARTED</a> •
+  <a href="#-data-persistence">PERSISTENCE</a> •
+  <a href="#-testing--validation">TESTING</a> •
+  <a href="#-roadmap">ROADMAP</a>
+</p>
 
-## 📌 Overview
-
-TaskFlow is a high-performance, client-side task and project management application designed around a modern SaaS workflow.
-
-The application combines a polished dark interface with practical productivity functionality:
-
-Interactive analytics dashboard
-Kanban workflow management
-Advanced task table
-Global command palette
-Local workspace persistence
-JSON backup and recovery
-Data validation and schema versioning
-Responsive mobile experience
-Built-in diagnostic testing
-
-TaskFlow is intentionally implemented using native web technologies only, demonstrating how a sophisticated productivity interface can be built without React, Vue, Angular, external UI libraries, or npm packages.
-
-Created & Developed by MEGHARI Abderrahmane Tarek
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript ES6+">
+  <img src="https://img.shields.io/badge/Dependencies-0-111827?style=flat-square" alt="Zero Dependencies">
+  <img src="https://img.shields.io/badge/License-MIT-7C3AED?style=flat-square" alt="MIT License">
+</p>
 
 ---
 
-## ✨ Features
-📊 Dashboard & Analytics
+## 📌 OVERVIEW
 
-A centralized workspace dashboard providing an overview of project activity and productivity.
+**TaskFlow** is a modern, client-side task and project management application designed around a SaaS-style productivity workflow.
 
-Dynamic KPI cards
-Total, completed, in-progress, and overdue task metrics
-SVG productivity area chart
-SVG status donut chart
-Project progress tracking
-Priority breakdown
-Upcoming deadlines
-Activity feed
-Seven-column calendar
-Today's event timeline
-📋 Task Management
+It combines a polished dark interface with practical productivity functionality, including:
 
-A dedicated task-management interface designed for fast organization and navigation.
+- Interactive analytics dashboard
+- Kanban workflow management
+- Advanced task table
+- Global command palette
+- Quick task creation
+- Local workspace persistence
+- JSON backup and recovery
+- Data validation and recovery
+- Storage schema versioning
+- Responsive mobile experience
+- Built-in diagnostic testing
 
-Searchable task table
-Multi-column sorting
-Status filtering
-Priority filtering
-Project filtering
-Bulk selection
-Task creation and editing
-Optional task descriptions
-Due-date management
-Project assignment
+TaskFlow is intentionally implemented using the **native web platform**, without React, Vue, Angular, external UI libraries, or npm packages.
+
+The project demonstrates how a feature-rich productivity interface can be engineered using **Vanilla HTML5, CSS3, and JavaScript (ES6+)** while maintaining a lightweight and inspectable architecture.
+
+**Created & Developed by MEGHARI Abderrahmane Tarek**
 
 ---
+
+## ✨ FEATURES
+
+### 📊 Dashboard & Analytics
+
+A centralized workspace dashboard providing a visual overview of project activity and productivity.
+
+- Dynamic KPI cards
+- Total, completed, in-progress, and overdue task metrics
+- SVG productivity overview area chart
+- SVG status donut chart
+- Project progress tracking
+- Priority breakdown
+- Upcoming deadlines
+- Activity feed
+- Seven-column calendar
+- Active-day highlighting
+- Today's event timeline
+
+### 📋 Task Management
+
+A dedicated task-management interface designed for efficient organization, filtering, and navigation.
+
+- Searchable task table
+- Multi-column sorting
+- Status filtering
+- Priority filtering
+- Project filtering
+- Bulk task selection
+- Task creation and editing
+- Optional task descriptions
+- Due-date management
+- Project assignment
+
+### 🗃️ Kanban Workflow
+
+TaskFlow provides an interactive Kanban board powered by the native **HTML5 Drag & Drop API**.
+
+Tasks can be moved between five workflow states:
+
+```text
+Backlog → Todo → In Progress → Review → Done
 
 ## 🗃️ KANBAN WORKFLOW
 
