@@ -100,3 +100,10 @@ TaskFlow/
 ├── script.js             # Core TaskFlow logic, state management, UI handlers, and LocalStorage engine
 ├── LICENSE               # Project license (MIT)
 └── README.md             # Project documentation
+
+## 🚀 Installation
+
+### 1. Clone the repository
+Clone the TaskFlow repository to your local machine:
+```bash
+git clone [https://github.com/YOUR_USERNAME/TaskFlow.git](https://github.com/YOUR_USERNAME/TaskFlow.git)
