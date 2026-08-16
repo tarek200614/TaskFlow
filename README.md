@@ -256,6 +256,10 @@ Planned views include:
 
 <img width="1886" height="901" alt="kanban board" src="https://github.com/user-attachments/assets/4088c370-d2ae-455c-a388-14c5d724d068" />
 
+# Kanban Board
+
+<img width="1886" height="901" alt="image" src="https://github.com/user-attachments/assets/af2d9f3e-be75-417e-854c-89bc9c359a43" />
+
 # My Tasks
 
 <img width="1886" height="901" alt="My tasks" src="https://github.com/user-attachments/assets/95b197cb-d85a-404f-bbc3-21ab89a9ffc8" />
