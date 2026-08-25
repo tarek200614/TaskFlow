@@ -5,13 +5,13 @@
 A production-oriented task and project management application built from the ground up with **Vanilla HTML5, CSS3, and JavaScript (ES6+)** — with **zero external dependencies**.
 
 <p align="center">
-  <a href="#-features">FEATURES</a> •
-  <a href="#-kanban-workflow">TECHNOLOGY</a> •
-  <a href="#-architecture">ARCHITECTURE</a> •
-  <a href="#-getting-started">GETTING STARTED</a> •
-  <a href="#-data-persistence">PERSISTENCE</a> •
-  <a href="#-testing--validation">TESTING</a> •
-  <a href="#-roadmap">ROADMAP</a>
+  <a href="#features">FEATURES</a> •
+  <a href="#technology">TECHNOLOGY</a> •
+  <a href="#architecture">ARCHITECTURE</a> •
+  <a href="#getting-started">GETTING STARTED</a> •
+  <a href="#data-persistence">PERSISTENCE</a> •
+  <a href="#testing">TESTING</a> •
+  <a href="#roadmap">ROADMAP</a>
 </p>
 
 <p align="center">
