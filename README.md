@@ -51,22 +51,31 @@ The project demonstrates how a feature-rich productivity interface can be engine
 
 ---
 
-## 🌐 Live Demo
+## 🌐 LIVE DEMO
 
-🚀 **[Launch TaskFlow Live Demo](https://taskflow-gamma-nine-50.vercel.app/)**
+<p align="center">
+  <a href="https://taskflow-gamma-nine-50.vercel.app/">
+    <img src="https://img.shields.io/badge/🚀_LAUNCH_TASKFLOW_LIVE_DEMO-7C3AED?style=for-the-badge" alt="Launch TaskFlow Live Demo">
+  </a>
+</p>
 
-> **Try TaskFlow directly in your browser.**  
-> The live demo showcases the application's core task-management workflow, responsive interface, and interactive user experience without requiring local installation.
+<p align="center">
+  <strong>Try TaskFlow directly in your browser.</strong><br>
+  The live demo showcases the application's core task-management workflow,
+  responsive interface, and interactive user experience without requiring local installation.
+</p>
 
 ### ✨ Demo Highlights
 
-- 📋 Create, edit, complete, and delete tasks
-- 🏷️ Organize tasks by status and priority
-- 🔍 Search and filter tasks
-- 📊 Dashboard with task statistics
-- 💾 Persistent client-side demo data
-- 📱 Fully responsive design for desktop, tablet, and mobile
-- ⚡ Interactive UI with real-time state updates
+| Feature | Description |
+|---|---|
+| 📋 Task Management | Create, edit, complete, and delete tasks |
+| 🏷️ Organization | Organize tasks by status and priority |
+| 🔍 Search & Filtering | Search and filter tasks |
+| 📊 Dashboard | Dashboard with task statistics |
+| 💾 Persistence | Persistent client-side demo data |
+| 📱 Responsive UI | Desktop, tablet, and mobile support |
+| ⚡ Interactivity | Real-time UI state updates |
 
 ### 🔐 Demo Access
 
