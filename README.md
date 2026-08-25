@@ -109,7 +109,7 @@ For the complete source code and local development setup, see the installation i
 The **Live Demo** is intended for quick evaluation, while the repository contains the complete project source code and development configuration.
 
 ---
-
+<a id="features"></a>
 ## ✨ Features
 
 ### 📊 Dashboard & Analytics
@@ -250,7 +250,7 @@ Escape-to-close modals
 Click-outside modal closing
 
 ---
-
+<a id="technology"></a>
 ## 🛠️ Technology Stack
 
 | Technology | Purpose |
@@ -272,7 +272,7 @@ TaskFlow uses:
 Everything is implemented using native browser APIs and modern web standards.
 
 ---
-
+<a id="architecture"></a>
 ## 🏗️ Architecture
 
 ```text
@@ -351,7 +351,7 @@ Planned views include:
 
 ---
 
-
+<a id="getting-started"></a>
 ## 🚀 Getting Started
 
 TaskFlow requires no package manager, build system, or dependency installation.
@@ -386,7 +386,7 @@ Then visit:
 The project can also be launched with the Live Server extension for Visual Studio Code.
 
 ---
-
+<a id="data-persistence"></a>
 ## 💾 Data Persistence
 
 TaskFlow stores its workspace locally under:
@@ -450,7 +450,7 @@ Available operations:
 Storage failures, including `localStorage.setItem()` errors caused by browser restrictions or storage limits, are reported through the application UI.
 
 ---
-
+<a id="testing"></a>
 ## 🧪 Testing & Validation
 
 TaskFlow does not currently use an external testing framework.
@@ -552,7 +552,7 @@ Practical implementation of:
 The project demonstrates that complex productivity interfaces can be implemented using the native web platform without relying on external frameworks or component libraries.
 
 ---
-
+<a id="roadmap"></a>
 ## 🗺️ Roadmap
 
 The following capabilities are planned for future versions and are not currently implemented:
