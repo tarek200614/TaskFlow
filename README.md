@@ -22,7 +22,6 @@ A production-oriented task and project management application built from the gro
   <img src="https://img.shields.io/badge/License-MIT-7C3AED?style=flat-square" alt="MIT License">
 </p>
 
----
 
 ---
 
