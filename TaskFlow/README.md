@@ -1,8 +1,27 @@
-# TaskFlow — Premium Enterprise SaaS Task Management Platform
+# 🚀 TaskFlow
 
-**TaskFlow** is a high-performance, commercial-grade SaaS task and project management web application built entirely with modern Vanilla HTML5, CSS3, and JavaScript (ES6+). Designed with a dark SaaS aesthetic inspired by Linear, ClickUp, and Notion.
+> A modern task management application designed to organize, track, and manage tasks efficiently.
 
-Created & Developed by **MEGHARI Abderrahmane Tarek** (Owner & Lead Engineer).
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Open_App-2ea44f?style=for-the-badge)](YOUR_EXISTING_LIVE_DEMO_URL)
+
+## 🌐 Live Demo
+
+👉 **[Open TaskFlow Live Demo](https://taskflow-gamma-nine-50.vercel.app/)**
+
+Explore the application directly in your browser without installing or configuring the project locally.
+
+### Demo Features
+
+- Task creation and management
+- Task editing and deletion
+- Status and priority management
+- Search and filtering
+- Dashboard statistics
+- Responsive interface
+- Interactive UI
+- Persistent demo state
+
+> **Note:** The live demo is intended for demonstration and evaluation. The complete source code remains available in this repository.
 
 ---
 
