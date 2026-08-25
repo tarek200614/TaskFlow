@@ -346,28 +346,37 @@ Planned views include:
 
 ---
 
+
 ## 🚀 GETTING STARTED
 
 TaskFlow requires no package manager, build system, or dependency installation.
 
-1. CLONE THE REPOSITORY
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/tarek200614/TaskFlow.git
 cd TaskFlow
-2. OPEN THE APPLICATION
+```
+
+### 2. Open the Application
 
 Open the following file in a modern browser:
 
-index.html
-3. RUN WITH PYTHON
+`index.html`
+
+### 3. Run with Python
 
 From the project directory:
 
+```bash
 python -m http.server 8000
+```
 
 Then visit:
 
-http://localhost:8000
-4. USE VS CODE
+`http://localhost:8000`
+
+### 4. Use VS Code
 
 The project can also be launched with the Live Server extension for Visual Studio Code.
 
@@ -377,10 +386,12 @@ The project can also be launched with the Live Server extension for Visual Studi
 
 TaskFlow stores its workspace locally under:
 
-taskflow_data_v1
-DATA LOADING PIPELINE
+`taskflow_data_v1`
+
+### DATA LOADING PIPELINE
 
 When the application loads, stored data goes through the following process:
+
 ```text
 LocalStorage
      │
@@ -402,76 +413,84 @@ Normalization
      ▼
 Recovered Workspace
 ```
+
 The application:
 
-Reads the stored LocalStorage value.
-Parses it as JSON.
-Recovers from corrupted data when necessary.
-Checks schemaVersion.
-Runs migration logic when required.
-Validates workspace collections.
-Validates task and project objects.
-Repairs invalid project references.
-Loads the normalized state.
+* Reads the stored LocalStorage value.
+* Parses it as JSON.
+* Recovers from corrupted data when necessary.
+* Checks `schemaVersion`.
+* Runs migration logic when required.
+* Validates workspace collections.
+* Validates task and project objects.
+* Repairs invalid project references.
+* Loads the normalized state.
 
 If a repair is performed, the user receives a notification.
 
 ---
 
-## BACKUP & RESTORE
+## 💾 BACKUP & RESTORE
 
 Navigate to:
 
-Settings → Workspace Data Backup
+`Settings → Workspace Data Backup`
 
 Available operations:
 
-Export workspace as JSON
-Import an existing JSON backup
-Reset to the demo dataset
+* Export workspace as JSON
+* Import an existing JSON backup
+* Reset to the demo dataset
 
-Storage failures, including localStorage.setItem() errors caused by browser restrictions or storage limits, are reported through the application UI.
+Storage failures, including `localStorage.setItem()` errors caused by browser restrictions or storage limits, are reported through the application UI.
 
 ---
 
 ## 🧪 TESTING & VALIDATION
 
 TaskFlow does not currently use an external testing framework.
-
 Instead, it includes a built-in assertion-based diagnostic system while maintaining its zero-dependency architecture.
 
-STATISTICS TESTS
+### STATISTICS TESTS
 
-js/statistics.js exposes:
+`js/statistics.js` exposes:
 
+```javascript
 TaskFlowStats.runStatisticsTests();
+```
 
 The suite validates:
 
-Task totals
-Completion percentages
-Overdue calculations
-Project progress
-Status breakdowns
-Upcoming deadlines
-Completed tasks with past due dates
-Statistics edge cases
-APPLICATION DIAGNOSTICS
+* Task totals
+* Completion percentages
+* Overdue calculations
+* Project progress
+* Status breakdowns
+* Upcoming deadlines
+* Completed tasks with past due dates
+* Statistics edge cases
 
-script.js exposes:
+### APPLICATION DIAGNOSTICS
 
+`script.js` exposes:
+
+```javascript
 window.runStatisticsTests();
+```
 
 This combines:
 
-Statistics assertions
-Data-normalization checks
-Data-recovery assertions
-RUN DIAGNOSTICS
+* Statistics assertions
+* Data-normalization checks
+* Data-recovery assertions
+
+### RUN DIAGNOSTICS
 
 Open the browser developer console and execute:
 
+```javascript
 runStatisticsTests();
+```
 
 Results are reported through the console and application interface.
 
@@ -481,74 +500,75 @@ Results are reported through the console and application interface.
 
 TaskFlow provided hands-on experience across several areas of frontend engineering.
 
-FRONTEND ARCHITECTURE
-Single-page application architecture
-State-driven rendering
-Separation of application state and UI
-Client-side routing
-Custom design-system implementation
-MODERN JAVASCRIPT
-ES6+ syntax
-Event delegation
-Array transformation pipelines
-State management
-Modular architecture
-Dynamic DOM rendering
-NATIVE BROWSER APIS
+### FRONTEND ARCHITECTURE
+* Single-page application architecture
+* State-driven rendering
+* Separation of application state and UI
+* Client-side routing
+* Custom design-system implementation
 
+### MODERN JAVASCRIPT
+* ES6+ syntax
+* Event delegation
+* Array transformation pipelines
+* State management
+* Modular architecture
+* Dynamic DOM rendering
+
+### NATIVE BROWSER APIS
 Practical implementation of:
+* LocalStorage
+* FileReader
+* HTML5 Drag & Drop
+* SVG
+* Keyboard events
+* Browser storage APIs
 
-LocalStorage
-FileReader
-HTML5 Drag & Drop
-SVG
-Keyboard events
-Browser storage APIs
-DATA ENGINEERING & RESILIENCE
-Data normalization
-Schema versioning
-Migration logic
-Corrupted-data recovery
-Defensive validation
-Invalid-reference recovery
-UI ENGINEERING
-Responsive layouts
-CSS Grid
-Flexbox
-Modal systems
-Drawers
-Command palettes
-Data tables
-Interactive charts
-Mobile navigation
-ZERO-DEPENDENCY DEVELOPMENT
+### DATA ENGINEERING & RESILIENCE
+* Data normalization
+* Schema versioning
+* Migration logic
+* Corrupted-data recovery
+* Defensive validation
+* Invalid-reference recovery
 
+### UI ENGINEERING
+* Responsive layouts
+* CSS Grid
+* Flexbox
+* Modal systems
+* Drawers
+* Command palettes
+* Data tables
+* Interactive charts
+* Mobile navigation
+
+### ZERO-DEPENDENCY DEVELOPMENT
 The project demonstrates that complex productivity interfaces can be implemented using the native web platform without relying on external frameworks or component libraries.
 
 ---
 
 ## 🗺️ ROADMAP
 
-The following capabilities are planned for future versions and are not currently implemented.
+The following capabilities are planned for future versions and are not currently implemented:
 
- Cloud synchronization through a REST API
- Progressive Web App support
- Service-worker-based offline functionality
- Advanced time tracking
- Productivity history and reporting
- Custom Kanban columns
- Custom tag colors
- Workspace themes
- Automated unit testing
- End-to-end testing with Playwright
- Testing with Vitest
- Backend architecture
- Multi-user workspaces
- Authentication and role-based permissions
- Cloud database
- Real-time synchronization
-
- ---
+* Cloud synchronization through a REST API
+* Progressive Web App support
+* Service-worker-based offline functionality
+* Advanced time tracking
+* Productivity history and reporting
+* Custom Kanban columns
+* Custom tag colors
+* Workspace themes
+* Automated unit testing
+* End-to-end testing with Playwright
+* Testing with Vitest
+* Backend architecture
+* Multi-user workspaces
+* Authentication and role-based permissions
+* Cloud database
+* Real-time synchronization
+```
  
 ## 👨‍💻 AUTHOR
 
