@@ -568,7 +568,7 @@ The following capabilities are planned for future versions and are not currently
 * Authentication and role-based permissions
 * Cloud database
 * Real-time synchronization
-```
+
  
 ## 👨‍💻 AUTHOR
 
