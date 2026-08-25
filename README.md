@@ -57,7 +57,7 @@ The project demonstrates how a feature-rich productivity interface can be engine
 
 <p align="center">
   <a href="https://taskflow-gamma-nine-50.vercel.app/">
-    <img src="https://img.shields.io/badge/▶️%20LAUNCH%20TASKFLOW%20LIVE%20DEMO-7C3AED?style=for-the-badge&logo=vercel&logoColor=white" alt="Launch TaskFlow Live Demo">
+    <img src="https://img.shields.io/badge/%20LAUNCH%20TASKFLOW%20LIVE%20DEMO-7C3AED?style=for-the-badge&logo=vercel&logoColor=white" alt="Launch TaskFlow Live Demo">
   </a>
 </p>
 
