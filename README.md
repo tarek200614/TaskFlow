@@ -25,7 +25,7 @@ A production-oriented task and project management application built from the gro
 
 ---
 
-## 📌 OVERVIEW
+## 📌 Overview
 
 **TaskFlow** is a modern, client-side task and project management application designed around a SaaS-style productivity workflow.
 
@@ -110,7 +110,7 @@ The **Live Demo** is intended for quick evaluation, while the repository contain
 
 ---
 
-## ✨ FEATURES
+## ✨ Features
 
 ### 📊 Dashboard & Analytics
 
@@ -147,7 +147,7 @@ Backlog → Todo → In Progress → Review → Done
 ```
 ---
 
-## 🗃️ KANBAN WORKFLOW
+## 🗃️ Kanban Workflow
 
 A native drag-and-drop workflow board powered by the HTML5 Drag & Drop API.
 
@@ -166,7 +166,7 @@ The command palette provides access to tasks, projects, and application views.
 
 ---
 
-## ➕ QUICK CREATE
+## ➕ Quick Create
 
 Press C to open the task creation drawer.
 
@@ -177,7 +177,8 @@ Optional descriptions
 Priority selection
 Project assignment
 Due-date management
-💾 PERSISTENT WORKSPACE
+
+## 💾 Persistent Workspace
 
 TaskFlow persists workspace data locally using the browser's LocalStorage API.
 
@@ -196,7 +197,7 @@ Demo-data reset
 
 ---
 
-## 🛡️ DATA VALIDATION & RECOVERY
+## 🛡️ Data Validation & Recovery
 
 TaskFlow includes a dedicated normalization and recovery layer designed to prevent malformed local data from crashing the application.
 
@@ -214,7 +215,7 @@ When recovery is required, the application notifies the user.
 
 ---
 
-## 🔄 STORAGE SCHEMA VERSIONING
+## 🔄 Storage Schema Versioning
 
 Persisted workspace data contains a schemaVersion value.
 
@@ -222,7 +223,7 @@ A lightweight migration mechanism allows the application to evolve its storage f
 
 ---
 
-## 📱 RESPONSIVE EXPERIENCE
+## 📱 Responsive Experience
 
 The interface is designed for a wide range of screen sizes, with responsive behavior verified from approximately 320px to 1920px.
 
@@ -237,7 +238,7 @@ No intentional horizontal overflow
 
 ---
 
-## ♿ ACCESSIBILITY
+## ♿ Accessibility
 
 Implemented accessibility practices include:
 
@@ -250,7 +251,7 @@ Click-outside modal closing
 
 ---
 
-## 🛠️ TECHNOLOGY STACK
+## 🛠️ Technology Stack
 
 | Technology | Purpose |
 |---|---|
@@ -262,7 +263,7 @@ Click-outside modal closing
 | **HTML5 Drag & Drop API** | Kanban interactions |
 | **SVG** | Zero-dependency charts and interface graphics |
 
-### ZERO DEPENDENCIES
+### Zero Dependencies
 
 TaskFlow uses:
 
@@ -272,7 +273,7 @@ Everything is implemented using native browser APIs and modern web standards.
 
 ---
 
-## 🏗️ ARCHITECTURE
+## 🏗️ Architecture
 
 ```text
 TaskFlow/
@@ -289,7 +290,7 @@ TaskFlow/
 
 ---
 
-## 📸 SCREENSHOTS
+## 📸 Screenshots
 
 Screenshots will be added as the project documentation is updated.
 Planned views include:
@@ -351,7 +352,7 @@ Planned views include:
 ---
 
 
-## 🚀 GETTING STARTED
+## 🚀 Getting Started
 
 TaskFlow requires no package manager, build system, or dependency installation.
 
@@ -386,13 +387,13 @@ The project can also be launched with the Live Server extension for Visual Studi
 
 ---
 
-## 💾 DATA PERSISTENCE
+## 💾 Data Persistence
 
 TaskFlow stores its workspace locally under:
 
 `taskflow_data_v1`
 
-### DATA LOADING PIPELINE
+### Data Loading Pipline
 
 When the application loads, stored data goes through the following process:
 
@@ -434,7 +435,7 @@ If a repair is performed, the user receives a notification.
 
 ---
 
-## 💾 BACKUP & RESTORE
+## 💾 Backup & Restore
 
 Navigate to:
 
@@ -450,12 +451,12 @@ Storage failures, including `localStorage.setItem()` errors caused by browser re
 
 ---
 
-## 🧪 TESTING & VALIDATION
+## 🧪 Testing & Validation
 
 TaskFlow does not currently use an external testing framework.
 Instead, it includes a built-in assertion-based diagnostic system while maintaining its zero-dependency architecture.
 
-### STATISTICS TESTS
+### Statistics Tests
 
 `js/statistics.js` exposes:
 
@@ -474,7 +475,7 @@ The suite validates:
 * Completed tasks with past due dates
 * Statistics edge cases
 
-### APPLICATION DIAGNOSTICS
+### Application Diagnostics
 
 `script.js` exposes:
 
@@ -488,7 +489,7 @@ This combines:
 * Data-normalization checks
 * Data-recovery assertions
 
-### RUN DIAGNOSTICS
+### Run Diagnostics
 
 Open the browser developer console and execute:
 
@@ -500,7 +501,7 @@ Results are reported through the console and application interface.
 
 ---
 
-## 🧠 TECHNICAL LEARNING & ENGINEERING EXPERIENCE
+## 🧠 Technical Learning & Engineering Experience
 
 TaskFlow provided hands-on experience across several areas of frontend engineering.
 
@@ -552,7 +553,7 @@ The project demonstrates that complex productivity interfaces can be implemented
 
 ---
 
-## 🗺️ ROADMAP
+## 🗺️ Roadmap
 
 The following capabilities are planned for future versions and are not currently implemented:
 
@@ -575,7 +576,7 @@ The following capabilities are planned for future versions and are not currently
 
 ---
 
-## 👨‍💻 AUTHOR
+## 👨‍💻 Author
 
 MEGHARI Abderrahmane Tarek
 
@@ -585,7 +586,7 @@ Junior Full Stack Developer & Computer Science Student
 
 ---
 
-## 📄 LICENSE
+## 📄 License
 
 This project is licensed under the MIT License.
 
@@ -593,7 +594,7 @@ See the LICENSE file for the complete license text.
 
 ---
 
-## ⭐ ACKNOWLEDGMENTS
+## ⭐ Acknowledgments
 
 MDN Web Docs — Technical documentation and references for JavaScript, LocalStorage, HTML5 Drag & Drop, SVG, and native browser APIs.
 Native Web Platform — CSS Grid, Flexbox, CSS Custom Properties, HTML5 APIs, SVG, and other browser standards.
