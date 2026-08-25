@@ -58,11 +58,7 @@ The project demonstrates how a feature-rich productivity interface can be engine
     <img src="https://img.shields.io/badge/🚀_LAUNCH_TASKFLOW_LIVE_DEMO-7C3AED?style=for-the-badge" alt="Launch TaskFlow Live Demo">
   </a>
 </p>
-<p align="center">
-  <sub>
-    Interactive browser-based demonstrations deployed with Vercel.
-  </sub>
-</p>
+
 
 
 <p align="center">
