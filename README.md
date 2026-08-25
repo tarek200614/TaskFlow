@@ -1,4 +1,4 @@
-## 🚀 TASKFLOW
+# 🚀 TASKFLOW
 
 ### PREMIUM SAAS TASK & PROJECT MANAGEMENT PLATFORM
 
@@ -21,6 +21,8 @@ A production-oriented task and project management application built from the gro
   <img src="https://img.shields.io/badge/Dependencies-0-111827?style=flat-square" alt="Zero Dependencies">
   <img src="https://img.shields.io/badge/License-MIT-7C3AED?style=flat-square" alt="MIT License">
 </p>
+
+---
 
 ---
 
