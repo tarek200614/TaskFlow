@@ -51,7 +51,7 @@ The project demonstrates how a feature-rich productivity interface can be engine
 
 ---
 
-## 🌐 LIVE DEMO
+## 🌐 Live Demo
 
 **TaskFlow is available as a fully interactive live web demo.**
 
