@@ -247,56 +247,42 @@ Click-outside modal closing
 ---
 
 ## 🛠️ TECHNOLOGY STACK
-Technology	Purpose
-HTML5	Semantic application structure
-CSS3	Design system, responsive layouts, Grid, Flexbox, animations
-JavaScript ES6+	Application logic, state, rendering, routing and interactions
-LocalStorage API	Client-side workspace persistence
-FileReader API	Local JSON backup importing
-HTML5 Drag & Drop API	Kanban interactions
-SVG	Zero-dependency charts and interface graphics
-ZERO DEPENDENCIES
+
+| Technology | Purpose |
+|---|---|
+| **HTML5** | Semantic application structure |
+| **CSS3** | Design system, responsive layouts, Grid, Flexbox, animations |
+| **JavaScript ES6+** | Application logic, state, rendering, routing and interactions |
+| **LocalStorage API** | Client-side workspace persistence |
+| **FileReader API** | Local JSON backup importing |
+| **HTML5 Drag & Drop API** | Kanban interactions |
+| **SVG** | Zero-dependency charts and interface graphics |
+
+### ZERO DEPENDENCIES
 
 TaskFlow uses:
 
-0 external libraries · 0 npm packages · 0 frameworks
+> **0 external libraries · 0 npm packages · 0 frameworks**
 
 Everything is implemented using native browser APIs and modern web standards.
 
 ---
 
 ## 🏗️ ARCHITECTURE
+
 ```text
 TaskFlow/
 ├── assets/
-│   └── favicon.svg      # Application vector favicon
+│   └── favicon.svg
 ├── js/
-│   └── statistics.js    # Task and productivity statistics calculations & test suite
-├── index.html           # Main single-page application interface and modals
-├── style.css            # Complete design system, layouts, and responsive styles
-├── script.js            # Core state engine, DOM controller, persistence, and event listeners
-├── LICENSE              # MIT License
-└── README.md            # Application documentation
-TaskFlow follows a deliberately lightweight client-side architecture.
-
-CORE FILES
-File	Responsibility
-index.html	## Application shell and interface structure
-style.css	## Complete visual system and responsive styling
-script.js	## Application state, rendering, controllers, storage and validation
-js/statistics.js	## Centralized statistics calculations and diagnostic tests
-assets/favicon.svg	## Application favicon
-ARCHITECTURE PRINCIPLES
-
-The project intentionally maintains:
-
-1 active stylesheet
-1 main application script
-1 statistics module
-0 external dependencies
-
-This keeps the project easy to inspect, run, and understand while still supporting complex interactive functionality.
+│   └── statistics.js
+├── index.html
+├── style.css
+├── script.js
+├── LICENSE
+└── README.md
 ```
+
 ---
 
 ## 📸 SCREENSHOTS
