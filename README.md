@@ -291,36 +291,55 @@ Screenshots will be added as the project documentation is updated.
 Planned views include:
 
 # Dashboard
+
 <p align="center">
 <img width="1886" height="901" alt="image" src="https://github.com/user-attachments/assets/7b0b5012-04af-4141-8de4-36b8b353c2a3" />
 </p>
 
+---
+
 # Action & Goal-Oriented
+
 <p align="center">
 <img width="1886" height="901" alt="kanban board" src="https://github.com/user-attachments/assets/4088c370-d2ae-455c-a388-14c5d724d068" />
 </p>
 
+---
+
 # Kanban Board
+
 <p align="center">
 <img width="1886" height="901" alt="image" src="https://github.com/user-attachments/assets/af2d9f3e-be75-417e-854c-89bc9c359a43" />
 </p>
 
+---
+
 # My Tasks
+
 <p align="center">
 <img width="1886" height="901" alt="My tasks" src="https://github.com/user-attachments/assets/95b197cb-d85a-404f-bbc3-21ab89a9ffc8" />
 </p>
 
+---
+
 # Projects
+
 <p align="center">
 <img width="1886" height="901" alt="image" src="https://github.com/user-attachments/assets/5267ef12-b5ec-4b58-96f4-ce4c231342f4" />
 </p>
 
+---
+
 # Calendar
+
 <p align="center">
 <img width="1886" height="901" alt="image" src="https://github.com/user-attachments/assets/2911e080-b4fe-4e23-ae08-b76644af0483" />
 </p>
 
+---
+
 # Inbox
+
 <p align="center">
 <img width="1886" height="901" alt="image" src="https://github.com/user-attachments/assets/21b5e341-3bf8-4068-a745-3d558f5e1d90" />
 </p>
