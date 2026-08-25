@@ -569,7 +569,8 @@ The following capabilities are planned for future versions and are not currently
 * Cloud database
 * Real-time synchronization
 
- 
+---
+
 ## 👨‍💻 AUTHOR
 
 MEGHARI Abderrahmane Tarek
