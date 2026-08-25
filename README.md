@@ -69,7 +69,7 @@ The project demonstrates how a feature-rich productivity interface can be engine
 
 ### 🔐 Demo Access
 
-You Access dirctly to the website live demo
+You Access directly to the website live demo
 
 > **Note:** The live demo is provided for evaluation and demonstration purposes. Demo data may be reset periodically.
 
